@@ -1,0 +1,228 @@
+%-------------------------
+% resume in Latex
+% Author : Avnish Sachar
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\rItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\rItemDesc}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\rItemDescp}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\rSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\rSubItem}[2]{\rItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\rSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\rSubHeadingListEnd}{\end{itemize}}
+\newcommand{\rItemListStart}{\begin{itemize}}
+\newcommand{\rItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CONTENT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://avnishsachar.gitlab.io/}{\Large AVNISH SACHAR}} & \faEnvelopeO \href{mailto:avnishsachar1@gmail.com}{ avnishsachar1@gmail.com}\\
+  \faHome \href{http://avnishsachar.github.io/}{ avnishsachar.github.io}  & \faGitlab \href{https://gitlab.com/avnishsachar}{ avnishsachar}\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \rSubHeadingListStart
+    \rSubheading
+      {Manipal Institute of Technology}{Manipal, India}
+      {Bachelor of Technology in Mechatronics Engineering;  GPA: 3.43 (8.17/10)}{August 2015 -- Present}
+    \rSubheading
+      {Delhi Public School Gurgaon}{Gurgaon, India}
+      {All India Senior School Certificate Examination, CBSE;  Grade: 91.8\%}{August 2013 -- July 2015}
+     \rSubheading
+      {Delhi Public School Gurgaon}{Gurgaon, India}
+     {All India Secondary School Examination, CBSE;  GPA: 10/10}{August 2011 -- July 2013}
+      
+  \rSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{Skills}
+
+\rSubHeadingListStart
+    \rSubItem{Programming/Scripting Languages}
+      {Python, C++, MATLAB, C}
+    \rSubItem{Frameworks and Tools}
+      {Robot Operating System (ROS), GazeboSim, CATIA, Solidworks, AutoCAD, Git, \LaTeX}
+    \rSubItem{Languages}
+      {English, Hindi, French (intermediate), German (beginner)}
+\rSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \rSubHeadingListStart
+
+    \rSubheading
+      {Biorobotics Laboratory, \'Ecole Polytechnique F\'ed\'erale de Lausanne(EPFL)}{Lausanne, Switzerland}
+      {Research Intern}{June 2018 - July 2018}
+      \rItemListStart
+        \rItemDesc{}
+          {Developed a neuromechanical framework using ROS to study amphibian locomotion under Prof. Auke Jan Ijspeert.}
+        \rItemDesc{}
+          {Simulated and analyzed neuromechanical controllers for different tetrapod morphologies.}
+        \rItemDesc{}
+          {Research supported by the Human Frontier Science Program (HFSP) for the Robotics-Inspired Biology project}
+      \rItemListEnd
+
+    \rSubheading
+      {Mechatronics Laboratory, IIT Delhi}{New Delhi, India}
+      {Intern}{May 2017 - July 2017}
+      \rItemListStart
+        \rItemDesc{}
+          {Developed a wearable energy expenditure device under Dr. Sudipto Mukherjee.}
+        \rItemDesc{}
+          {Studied capnographic and calorie expenditure data for humans.}
+      \rItemListEnd
+
+    \rSubheading
+      {Formula Manipal}{Manipal, India}
+      {Electronics Engineer}{March 2016 -- Feburary 2017}
+      \rItemListStart
+        \rItemDesc{}
+        {Placed 9\textsuperscript{th} overall in Formula Bharat 2017.}
+        \rItemDesc{}
+        {Designed and developed an open-wheel Formula SAE car.}
+        \rItemDesc{}
+          {Developed a data acquisition (DAq) system.}
+        \rItemDesc{}
+          {Devised a closed lop shifting and clutching system for the transmission.}
+        \rItemDesc{}
+        {Developed an automated Drag Reduction System as a part of the aerodynamic package.}
+
+      \rItemListEnd
+  \rSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \rSubHeadingListStart
+    \rItemDescp{}
+      {Obstacle detection and Path planning for an autonomous robot using computer vision and fuzzy logic.}
+   \rItemDescp{}
+      {Modelling and simulating a salamander like robot in ROS and Gazebo.}
+       \rItemDescp{}
+      {Linear-quadratic generator (LQR) based control of a 3-link Linear Inverted Pendulum on a cart in ROS.}
+
+    \rItemDescp{}
+      {Developing a neuromechanical controller for a humanoid using Central Pattern Generators.}
+    \rItemDescp{}
+      {Modelling and simulation of MTAB-Aristo robotic arm in MATLAB.}
+    \rItemDescp{}
+      {Speech Enhancement using Extended Kalman Filter in MATLAB.}
+  \rSubHeadingListEnd
+%-----------Positions-----------------
+\section{Positions of Responsibility}
+  \rSubHeadingListStart
+    \rSubheading
+      {Teaching Assistant- Robot Dynamics and Control (MTE 4007)}{Manipal, India}
+      {Manipal Institute of Technology}{August 2018 - Present}
+      \rItemListStart
+        \rItemDesc{}
+          {Teaching ROS to a class of 42 undergraduates.}
+        \rItemDesc{}
+          {Prepared lessons and assignments, evaluating final projects.}
+      \rItemListEnd
+    \rSubheading
+      {Co-founder-- Biorobotics Group, Manipal}{Manipal, India}
+      {Manipal Institute of Technology}{September 2018 - Present}
+      \rItemListStart
+        \rItemDesc{}
+          {Conducting research on central pattern generators based neuromechanical models for animal locomotion.}
+        \rItemDesc{}
+            {Managing the recruitment and operations for the group.}
+      \rItemListEnd
+    \rSubheading
+      {Vice-Head-- Student Council}{Gurgaon, India}
+      {Delhi Public School Gurgaon}{July 2013 - July 2014}
+      \rItemListStart
+        \rItemDesc{}
+          {Planned and organized various events.}
+        \rItemDesc{}
+          {Supervised a team of 40 council members.}
+      \rItemListEnd
+  \rSubHeadingListEnd
+%-----------Online Courses-----------------
+\section{Online Courses}
+  \rSubHeadingListStart
+    \rItemDescp{}
+      {Robotics: Computational Motion Planning by University of Pennsylvania on Coursera. Certificate earned on Wednesday, October 3, 2018. Grade Achieved: 100.0\%.}
+  \rSubHeadingListEnd
+%-----------EXTRA CURRICULAR-----------------
+\section{Extra Curricular Activities}
+  \rSubHeadingListStart
+    \rItemDescp{}
+      {Played for the Gurgaon District team in the Haryana State Level Basketball Tournament (Under-17).}
+    \rItemDescp{}
+      {Committee Member, International Association for the Exchange of Students for Technical Experience (IAESTE), Manipal.}
+  \rSubHeadingListEnd
+\end{document}
